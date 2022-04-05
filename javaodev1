@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class notortalamasi {
+    public static void main(String[] args) {
+        //değişkenleri oluştururuz.
+        int mat,fizik,kimya,turkce,tarih,muzik;
+
+        //scanner sınıf tanımladık
+        Scanner sayi=new Scanner(System.in);
+        //notları alalım
+
+        System.out.print("Mat not: ");
+        mat = sayi.nextInt();
+
+        System.out.print("fizik not: ");
+        fizik = sayi.nextInt();
+
+        System.out.print("kimya not: ");
+        kimya = sayi.nextInt();
+
+        System.out.print("turkce not: ");
+        turkce = sayi.nextInt();
+
+        System.out.print("tarih not: ");
+        tarih = sayi.nextInt();
+
+        System.out.print("muzik not: ");
+        muzik = sayi.nextInt();
+
+        int toplam = (mat + fizik + kimya + tarih + muzik + turkce );
+        double ortalama  = toplam  /6.0;
+        if (ortalama > 60)
+        {
+            System.out.println("geçti");
+        }
+        else
+        {
+            System.out.println("kaldı");
+        }
+    }
+}
